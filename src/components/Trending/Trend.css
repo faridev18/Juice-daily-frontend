@@ -1,0 +1,39 @@
+
+.trend-section{
+    margin: auto;
+    padding: 40px 20px;
+}
+.trend-section h1{
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.trend-grid{
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+}
+.trend-item{
+    display: flex;
+}
+
+.trend-info{
+    padding-left: 10px;
+}
+.trend-info h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.trend-info h3, .trend-info p{
+    line-height: 25px;
+}
+.trend-info p{
+    font-size: 0.8em;
+}
