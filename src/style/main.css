@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+/* ----------------------------- */
+
+.mobile-menu {
+    left: -200%;
+    transition: 0.5s;
+  }
+  
+  .mobile-menu.active {
+   left: 0;
+  }
+  
+  .mobile-menu ul li ul {
+    display: none;
+  }
+  
+   .mobile-menu ul li:hover ul {
+    display: block;
+  }
+  
+  .imagelogo{
+    float: left;
+  }
+  .logoname{
+    font-weight: 700;
+    padding-left: 10px;
+    position: relative;
+    top: 2px;
+    color: #1dc6d1;
+  }
+/* ----------------------------- */
+header{
+    font-family: 'Poppins';
+    height: 90vh;
+    background-image: url('/public/assets/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.header{
+    display: flex;
+    height: 100%;
+    max-width: 1200px;
+}
+.left{
+    flex-basis: 50%;
+}
+.right{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right h1{
+    font-size: 5em;
+    line-height: 90px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.right p{
+    max-width: 80%;
+}
+.recipe{
+    background-color:  #a0e5f1;
+    padding: 15px;
+    width: fit-content;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+
+.recipe span{
+    background-color: white;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+@media screen and (max-width:750px) {
+    .header{
+        display: initial;
+        text-align: center;
+        
+    }
+    .right h1{
+        font-size: 3em;
+        line-height: 60px;
+    }
+    .right p{
+        margin: auto;
+    }
+    .recipe{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+/* ------------------------------ */
+
+
+.blog-section{
+    margin: auto;
+    padding: 40px 20px;
+}
+.blog-section h1{
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.grid-layout{
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+}
+
+/* .grid-item{
+    
+} */
+
+.grid-item h2{
+    font-size: 1.5em;
+}
+
+.grid-image{
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.prod1{
+    background-image: url('/public/assets/product1.png');
+}
+.prod2{
+    background-image: url('/public/assets/product2.png');
+}
+.prod3{
+    background-image: url('/public/assets/product3.png');
+}
+
+.item-info{
+    margin-top: 17px;
+}
+
+
+.item-info .categorie{
+    color: #FF553C;
+    text-transform: uppercase;
+    margin-right: 7px;
+}
+.item-info .time{
+    color: rgb(177, 171, 171);
+
+}
+
+@media screen and (max-width:750px) {
+    .blog-section h1 {
+        margin-left: 0px;
+    }
+    
+}
+
+/* ------------------------------- */
+
+.trend-section{
+    margin: auto;
+    padding: 40px 20px;
+}
+.trend-section h1{
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+.trend-grid{
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+}
+.trend-item{
+    display: flex;
+}
+
+.trend-info{
+    padding-left: 10px;
+}
+.trend-info h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.trend-info h3, .trend-info p{
+    line-height: 25px;
+}
+.trend-info p{
+    font-size: 0.8em;
+}

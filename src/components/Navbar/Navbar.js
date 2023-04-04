@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav.css';
+import '../../style/main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../images/logo.png';
 import search from '../../images/Search.png';

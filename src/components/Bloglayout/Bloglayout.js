@@ -1,50 +1,52 @@
 import React from 'react'
-import './Bloglayout.css';
+import '../../style/main.css';
+import Blogcard from '../Blogcard/Blogcard';
 export default function Bloglayout() {
+
+    const articles = [
+       {
+        minute:5,
+        categorie:"FUIT",
+        titre:"Simple juste recipes boost your ummine system"
+       },
+       {
+        minute:5,
+        categorie:"FUIT",
+        titre:"Simple juste recipes boost your ummine system"
+       },
+       {
+        minute:5,
+        categorie:"FUIT",
+        titre:"Simple juste recipes boost your ummine system"
+       },
+       {
+        minute:5,
+        categorie:"FUIT",
+        titre:"Simple juste recipes boost your ummine system"
+       },
+       {
+        minute:5,
+        categorie:"FUIT",
+        titre:"Simple juste recipes boost your ummine system"
+       },
+       {
+        minute:5,
+        categorie:"FUIT",
+        titre:"Simple juste recipes boost your ummine system"
+       }
+      ];
+
   return (
     <section className='blog-section'>
         <h1>Latest</h1>
         <div className='grid-layout'>
-            <div className='grid-item'>
-                <div className='grid-image prod2'>
-
-                </div>
-                <div className='item-info'>
-                    <span className='categorie'> Fruit</span>
-                    <span className='time'>--- 5 min read</span>
-                </div>
-                <h2>
-                    Simple juste recipes boost your ummine system
-                </h2>
-
-            </div>
-            <div className='grid-item'>
-                <div className='grid-image prod3'>
-
-                </div>
-                <div className='item-info'>
-                    <span className='categorie'> Fruit</span>
-                    <span className='time'>--- 5 min read</span>
-                </div>
-                <h2>
-                    Simple juste recipes boost your ummine system
-                </h2>
-
-            </div>
-            <div className='grid-item'>
-                <div className='grid-image prod1'>
-
-                </div>
-                <div className='item-info'>
-                    <span className='categorie'> Fruit</span>
-                    <span className='time'>--- 5 min read</span>
-                </div>
-                <h2>
-                    Simple juste recipes boost your ummine system
-                </h2>
-
-            </div>
-            
+        {articles.map((article) => (
+            <Blogcard
+                minute={article.minute}
+                categorie={article.categorie}
+                titre={article.titre}
+            />
+        ))}
            
         </div>
 

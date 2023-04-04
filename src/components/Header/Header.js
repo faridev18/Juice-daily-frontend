@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css';
+import '../../style/main.css';
 
 export default function Header() {
   return (
@@ -17,7 +17,7 @@ export default function Header() {
 
                 <h1>Simple and Tasty Juices Repice</h1>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis nunc elit, at aliquet nulla auctor ac. Integer tempus est enim, eu hendrerit lacus aliqua
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis nunc elit, at aliquet nulla auctor ac. Integer tempus est enim, eu hendrerit lacus aliqua
                 </p>
               
               </div>
